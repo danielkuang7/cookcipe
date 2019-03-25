@@ -1,2 +1,2 @@
-# make-a-dish
-React app for api
+# cookcipe
+React app for cooking recipe
