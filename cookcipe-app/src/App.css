@@ -11,10 +11,41 @@
 
 .title{
   color: white;
+  margin-right:750px;
+  margin-top: 50px;
+  animation-name: shape;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  /* animation-iteration: ease-out; */
+  /* transition-timing-function: ease-out-in; */
+}
+
+@keyframes shape {
+  0% {
+    background: none;
+    /* left: 0px;
+    top: 50px; */
+    /* margin-bottom: -50px; */
+    letter-spacing: 6px;
+    opacity: 0;
+  }
+  
 }
 
 .input{
   margin: 10px;
+}
+
+.footer{
+  margin-top: 550px;
+}
+
+.box{
+  width: 250px;
+}
+
+.input{
+  margin-left: 700px;
 }
 
 
