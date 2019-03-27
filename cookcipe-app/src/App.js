@@ -18,7 +18,7 @@ class App extends Component {
 }
 
 getRecipe(userInput){
-  let endpoint= `https://www.food2fork.com/api/search?key=872498ad70c0abbf0571fc7ff3e7d991&q=${userInput}`
+  let endpoint= `https://www.food2fork.com/api/search?key=54ebc42713b42b560c05d50131e7b7d4&q=${userInput}`
   fetch(endpoint)
   .then(response=>response.json())
   .then(data=>{

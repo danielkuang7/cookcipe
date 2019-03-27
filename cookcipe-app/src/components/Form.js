@@ -23,9 +23,9 @@ render() {
           <input className="box"
           onChange={this.handleSearch}
           type='text'
-          placeholder='Enter a key word for any recipe'
+          placeholder='Enter a key word for recipes'
           />
-          <input type='submit' value='Search'/>
+          <input className="search" type='submit' value='Search'/>
       </form>
     </div>
   );
