@@ -3,7 +3,8 @@ import './App.css';
 import Form from './components/Form';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import Recipes from './components/Recipes'
+import Recipes from './components/Recipes';
+import Logo from './components/Logo';
 
 
 class App extends Component {
@@ -17,7 +18,7 @@ class App extends Component {
 }
 
 getRecipe(userInput){
-  let endpoint= `https://www.food2fork.com/api/search?key=54ebc42713b42b560c05d50131e7b7d4&q=${userInput}`
+  let endpoint= `https://www.food2fork.com/api/search?key=872498ad70c0abbf0571fc7ff3e7d991&q=${userInput}`
   fetch(endpoint)
   .then(response=>response.json())
   .then(data=>{
@@ -32,7 +33,8 @@ handleSubmit(userInput){
   render() {
     return (
       <div className="App">
-        <Header />   
+        <Header />  
+        <Logo /> 
         <Form submit={this.handleSubmit}/>
         <Recipes recipes={this.state.recipes} />
         <Footer />

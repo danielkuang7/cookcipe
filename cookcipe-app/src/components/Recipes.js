@@ -9,28 +9,32 @@ class Recipes extends Component {
 
 getRecipes(){
     return this.props.recipes.map(recipe=>
-        <div className='container'>
-        <div className='row'>
-        <div key={recipe.recipe_id}>
-        <img src={recipe.image_url} alt={recipe.title} />
-        <p>{ recipe.title}</p>
-        <p>
-        <span>Publisher:
-            {recipe.publisher}
-        </span>
-        </p>
+       
+    <div key={recipe.recipe_id}>
+    <div class="row">
+       <div class="column">
+        <img  src={recipe.image_url} alt={recipe.title} />
+        </div>
+        <div class="column">
+            <p>{ recipe.title}</p>
+            <p>
+            <span>Publisher:
+                {recipe.publisher}
+            </span>
+            </p>
+            </div>
         <button>
-        <Link to={{ 
-          pathname: `/recipe/${recipe.recipe_id}`,
-          state: { recipe: recipe.title}
-          }}>View Recipe</Link>
+            <Link to={{ 
+            pathname: `/recipe/${recipe.recipe_id}`,
+            state: { recipe: recipe.title}
+            }}>View Recipe</Link>
         </button>  
         </div>
-        </div>
-        </div>
-        )
-        
-    }
+    </div>
+    
+    )
+    
+}
 
   render() {
     return (

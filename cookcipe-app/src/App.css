@@ -11,7 +11,7 @@
 
 .title{
   color: white;
-  margin-right:750px;
+  margin-right:1150px;
   margin-top: 50px;
   animation-name: shape;
   animation-duration: 4s;
@@ -27,26 +27,37 @@
     top: 50px; */
     /* margin-bottom: -50px; */
     letter-spacing: 6px;
-    opacity: 0;
+    opacity: 0.5;
   }
   
 }
 
+
 .input{
   margin: 10px;
+  margin-left: 1100px;
 }
 
 .footer{
-  margin-top: 550px;
+  margin-top: 600px;
 }
 
 .box{
   width: 250px;
 }
 
-.input{
-  margin-left: 700px;
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+.column {
+  /* flex: 10%; */
+  padding: 0px;
+}
+
+
 
 
 
