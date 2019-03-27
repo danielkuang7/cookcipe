@@ -43,7 +43,7 @@
 }
 
 .footer{
-  margin-top: 600px;
+  margin-top: 500px;
 }
 
 .box{
@@ -53,12 +53,14 @@
 }
 
 .search{
-  border: 2px solid rgb(175, 162, 162);
-  border-radius: 15px;
+  color: #ffa928;
+  border: none;
+  /* border-radius: 15px; */
 }
 
 .button{
   margin-bottom: 20px;
+  border-radius: 15px;
 }
 
 
@@ -66,6 +68,11 @@
   width: 400px;
   height: 400px;
   border-radius: 30px;
+}
+
+.recipe_title{
+  color: #ffa928;
+  font-size: 20px;
 }
 
 .toimage{
@@ -76,9 +83,17 @@
   margin-left: 250px;
 }
 
-.container{
+/* .container{
   display: grid;
-  justify-content: start;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 8px;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+} */
+
+.row{
+  display: flex;
 }
 
 

@@ -13,18 +13,21 @@ getRecipes(){
     <div key={recipe.recipe_id}>
    
        <div className='container'>
-       
-        <img className='image' src={recipe.image_url} alt={recipe.title} />
-       
-            <p className='recipe_title'>{ recipe.title}</p>
-           
-        <button className='button'>
-            <Link to={{ 
-            pathname: `/recipe/${recipe.recipe_id}`,
-            state: { recipe: recipe.title}
-            }}>View Recipe Link</Link>
-        </button> 
-        </div> 
+              
+              <img className='image' 
+              src={recipe.image_url} 
+              alt={recipe.title} />
+             
+              <p className='recipe_title'>{ recipe.title}</p>
+              
+              <button className='button'>
+                <Link to={{ 
+                pathname: `/recipe/${recipe.recipe_id}`,
+                state: { recipe: recipe.title}
+                }}>View Recipe Link</Link>
+              </button> 
+     </div>
+
        
     </div>
     
