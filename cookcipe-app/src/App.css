@@ -45,6 +45,7 @@
 
 .footer{
   margin-top: 500px;
+  background-color: #ffa928;
 }
 
 .box{
@@ -66,8 +67,8 @@
 
 
 .image{
-  width: 400px;
-  height: 400px;
+  width: 300px;
+  height: 300px;
   border-radius: 30px;
 }
 
@@ -76,16 +77,38 @@
   font-size: 20px;
 }
 
+.new_page{
+  background-color: #ffa928;
+}
+
 .toimage{
-  width: 600px;
+  width: 400px;
+  height: 400px;
+  margin-top: 30px;
+  border-radius: 30px;
+  
 }
 
 .items{
-  margin-left: 250px;
+  margin-left: 500px;
+  margin-top: 90px;
+  
 }
 
 .home_button{
   border-radius: 15px;
+}
+
+
+.container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 400px 400px 400px 400px; 
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  align-items: center;
+  justify-content: center;
+
 }
 
 

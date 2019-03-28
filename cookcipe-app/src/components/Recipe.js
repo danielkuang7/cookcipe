@@ -18,7 +18,7 @@ class Recipe extends Component {
 
   getDetails() {
     const title = this.props.location.state.recipe;
-    let endpoint= `https://cors-anywhere.herokuapp.com/http://food2fork.com/api/search?key=872498ad70c0abbf0571fc7ff3e7d991&q=${title}`
+    let endpoint= `https://cors-anywhere.herokuapp.com/http://food2fork.com/api/search?key=0f601abe3f1498ec7886f8be22d95a23&q=${title}`
     fetch(endpoint)
       .then(response => response.json())
       .then(json => {
@@ -34,8 +34,7 @@ class Recipe extends Component {
   render() {
     const recipe = this.state.details;
     return (
-      <div key={recipe.title} >
-        { this.state.details.length !== 0 &&
+      <div className='new_page' key={recipe.title} >
           <div className='items'>
             <img className='toimage' src={recipe.image_url} alt={recipe.title}/>
             <h2>{ recipe.title }</h2>

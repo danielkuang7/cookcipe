@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Logo = () => {
+function Logo(){
     return (
         <div>
-        {/* <img src={'./images/cookcipe.jpeg'} /> */}
+        {/* <img src={'./images/} /> */}
         </div>
     )
 }

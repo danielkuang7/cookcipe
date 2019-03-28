@@ -10,25 +10,19 @@ class Recipes extends Component {
 getRecipes(){
     return this.props.recipes.map(recipe=>
        
-    <div key={recipe.recipe_id}>
-   
-       <div className='container'>
-              
+    <div key={recipe.recipe_id}> 
               <img className='image' 
               src={recipe.image_url} 
               alt={recipe.title} />
              
-              <p className='recipe_title'>{ recipe.title}</p>
+              <span className='recipe_title'>{ recipe.title}</span> 
               
               <button className='button'>
                 <Link to={{ 
                 pathname: `/recipe/${recipe.recipe_id}`,
                 state: { recipe: recipe.title}
-                }}>View Recipe Link</Link>
+                }}>Recipe Link</Link>
               </button> 
-     </div>
-
-       
     </div>
     
     )
@@ -37,7 +31,7 @@ getRecipes(){
 
   render() {
     return (
-      <div>
+      <div className='container'>
         {this.getRecipes()}
       </div>
     );

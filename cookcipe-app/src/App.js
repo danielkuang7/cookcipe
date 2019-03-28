@@ -22,7 +22,8 @@ componentDidMount(){
 }
 
 getRecipe(userInput){
-  let endpoint= `https://www.food2fork.com/api/search?key=872498ad70c0abbf0571fc7ff3e7d991&q=${userInput}`
+  userInput = 'cake'
+  let endpoint= `https://www.food2fork.com/api/search?key=0f601abe3f1498ec7886f8be22d95a23&q=${userInput}`
   fetch(endpoint)
   .then(response=>response.json())
   .then(data=>{
