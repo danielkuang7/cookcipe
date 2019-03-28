@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class Form extends Component {
+class Search extends Component {
   constructor(props){
       super(props)
       this.state={
@@ -33,4 +33,4 @@ render() {
 }
 
 
-export default Form;
+export default Search;

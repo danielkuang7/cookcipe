@@ -36,6 +36,7 @@
 }
 
 
+
 .input{
   margin: 100px;
   /* margin-left: 1100px; */
@@ -83,17 +84,8 @@
   margin-left: 250px;
 }
 
-/* .container{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 8px;
-  max-width: 1200px;
-  width: 100%;
-  margin: 0 auto;
-} */
-
-.row{
-  display: flex;
+.home_button{
+  border-radius: 15px;
 }
 
 

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import Form from './components/Form';
+import Search from './components/Search';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Recipes from './components/Recipes';
@@ -17,8 +17,12 @@ class App extends Component {
   this.handleSubmit=this.handleSubmit.bind(this)
 }
 
+componentDidMount(){
+  this.getRecipe()
+}
+
 getRecipe(userInput){
-  let endpoint= `https://www.food2fork.com/api/search?key=54ebc42713b42b560c05d50131e7b7d4&q=${userInput}`
+  let endpoint= `https://www.food2fork.com/api/search?key=872498ad70c0abbf0571fc7ff3e7d991&q=${userInput}`
   fetch(endpoint)
   .then(response=>response.json())
   .then(data=>{
@@ -35,7 +39,7 @@ handleSubmit(userInput){
       <div className="App">
         <Header />  
         <Logo /> 
-        <Form submit={this.handleSubmit}/>
+        <Search submit={this.handleSubmit}/>
         <Recipes recipes={this.state.recipes} />
         <Footer />
       </div>
