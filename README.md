@@ -1,5 +1,5 @@
 # cookcipe
-## Decription
+## Description
 Cookcipe is an app built with React and an API. It's for foodie and cooking enthusiast.
 
 ## React Component Hierarchy
