@@ -1,0 +1,36 @@
+import React, { Component } from 'react';
+
+class Search extends Component {
+  constructor(props){
+      super(props)
+      this.state={
+          value:''
+      }
+      this.handleSearch=this.handleSearch.bind(this)
+      this.handleSubmit=this.handleSubmit.bind(this)
+  }
+  handleSearch=(e)=>{
+      this.setState({value: e.target.value})
+  }
+  handleSubmit(e){
+      e.preventDefault()
+      this.props.submit(this.state.value)
+  }
+render() {
+  return (
+    <div className="input">
+      <form onSubmit={this.handleSubmit}>
+          <input className="box"
+          onChange={this.handleSearch}
+          type='text'
+          placeholder='     Enter a key word for recipes'
+          />
+          <input className="search" type='submit' value='Search'/>
+      </form>
+    </div>
+  );
+}
+}
+
+
+export default Search;
