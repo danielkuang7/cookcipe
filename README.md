@@ -2,11 +2,11 @@
 ### Description
 Cookcipe is an app built with React and an API. It's for foodie and cooking enthusiast.
 
-![homepage](cookcipe-app/images/cook5.jpg)
+![homepage](images/cook5.jpg)
 
 ### Wireframe
 
-![homepage](cookcipe-app/images/cookcipewireframe.png)
+![homepage](images/cookcipewireframe.png)
 
 ### React Component Hierarchy
 * App > Header > Logo
