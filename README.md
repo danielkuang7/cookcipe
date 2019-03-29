@@ -2,7 +2,7 @@
 ### Description
 Cookcipe is an app built with React and an API. It's for foodie and cooking enthusiast.
 
-### [Heroku link](https://cookcipe.herokuapp.com/)
+### [App link](https://cookcipe.herokuapp.com/)
 
 ![homepage](images/cook5.jpg)
 
