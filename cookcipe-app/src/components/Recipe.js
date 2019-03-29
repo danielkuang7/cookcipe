@@ -9,11 +9,14 @@ class Recipe extends Component {
   this.state = {
     details: []
   }
-  
+  this.getDetails = this.getDetails.bind(this)
   }  
   
-
   componentDidMount(){
+    this.getDetails()
+  }
+
+  getDetails() {
     const title = this.props.location.state.recipe;
     let endpoint= `https://cors-anywhere.herokuapp.com/http://food2fork.com/api/search?key=3d4db73071714591d0ebf9b51672d81c&q=${title}`
     fetch(endpoint)
@@ -23,7 +26,7 @@ class Recipe extends Component {
           details: json.recipes[0]
         })
       })
-    }
+}
 
     
 
