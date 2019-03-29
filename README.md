@@ -2,6 +2,8 @@
 ### Description
 Cookcipe is an app built with React and an API. It's for foodie and cooking enthusiast.
 
+### [Heroku link](https://cookcipe.herokuapp.com/)
+
 ![homepage](images/cook5.jpg)
 
 ### Wireframe
@@ -20,6 +22,7 @@ App, Recipes, Recipe
 ### Funcitonal Components
 Header, Logo, Router, Footer
 
+
 ### Code Snippet
 A very important react lifecycle method
 
@@ -27,6 +30,5 @@ A very important react lifecycle method
 componentDidMount(){
   this.getRecipe()
 }
-
 
 
