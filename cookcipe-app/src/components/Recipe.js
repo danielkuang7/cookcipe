@@ -9,16 +9,13 @@ class Recipe extends Component {
   this.state = {
     details: []
   }
-  this.getDetails = this.getDetails.bind(this)
+  
   }  
   
-  componentDidMount(){
-    this.getDetails()
-  }
 
-  getDetails() {
+  componentDidMount(){
     const title = this.props.location.state.recipe;
-    let endpoint= `https://cors-anywhere.herokuapp.com/http://food2fork.com/api/search?key=0f601abe3f1498ec7886f8be22d95a23&q=${title}`
+    let endpoint= `https://cors-anywhere.herokuapp.com/http://food2fork.com/api/search?key=3d4db73071714591d0ebf9b51672d81c&q=${title}`
     fetch(endpoint)
       .then(response => response.json())
       .then(json => {
@@ -26,15 +23,16 @@ class Recipe extends Component {
           details: json.recipes[0]
         })
       })
-}
+    }
 
     
 
 
   render() {
-    const recipe = this.state.details;
+    const recipe = this.state.details 
     return (
       <div className='new_page' key={recipe.title} >
+      
           <div className='items'>
             <img className='toimage' src={recipe.image_url} alt={recipe.title}/>
             <h2>{ recipe.title }</h2>
@@ -45,7 +43,6 @@ class Recipe extends Component {
               <Link to="/">Home</Link>
             </button>
           </div>
-        }
       </div>
     );
   }

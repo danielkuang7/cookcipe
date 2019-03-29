@@ -3,7 +3,7 @@ import React from 'react'
 function Logo(){
     return (
         <div>
-        {/* <img src={'./images/} /> */}
+        {/* <img src={'.src/images/cook3.jpg'} /> */}
         </div>
     )
 }
