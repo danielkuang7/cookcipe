@@ -4,11 +4,11 @@ Cookcipe is an app built with React and an API. It's for foodie and cooking enth
 
 ### [App link](https://cookcipe.herokuapp.com/)
 
-![homepage](images/cook5.jpg)
+![homepage](src/images/cook5.jpg)
 
 ### Wireframe
 
-![homepage](images/cookcipewireframe.png)
+![homepage](src/images/cookcipewireframe.png)
 
 ### React Component Hierarchy
 * App > Header > Logo
