@@ -18,7 +18,7 @@ getRecipes(){
               <span className='recipe_title'>{ recipe.title}</span> 
               
               <button className='button'>
-                <Link to={{ 
+                <Link className='link' to={{ 
                 pathname: `/recipe/${recipe.recipe_id}`,
                 state: { recipe: recipe.title}
                 }}>Recipe Link</Link>
@@ -39,3 +39,4 @@ getRecipes(){
 }
 
 export default Recipes;
+
